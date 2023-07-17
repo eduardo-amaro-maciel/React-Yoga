@@ -1,0 +1,29 @@
+.listaPlanos {
+   display: flex;
+   padding-top: 2rem;
+   position: relative;
+   transition: .3s;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 4rem;
+}
+
+.btns button {
+   padding: 0 0.5rem
+}
+
+.planos {
+   text-align: center;
+}
+
+.linkComecar {
+   margin-top: 4rem;
+}
+
+.containerPlanos {
+   overflow: hidden;
+}
