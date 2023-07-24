@@ -80,7 +80,7 @@ export default function Instructor() {
             <button onClick={slideNext} aria-label='proximo instrutor'>Próximo</button>
          </div>
          <div className={styles.containerInstrutores}>
-            <ul className={styles.listaInstrutores} ref={containerSlideRef} style={{ left: `${positionWidth}px` }} >
+            <ul className={styles.listaInstrutores} style={{ left: `${positionWidth}px` }} >
                {instrutores.map(instrutor => (
                   <li key={instrutor.nome}>
                      <a href='/'>
@@ -94,4 +94,4 @@ export default function Instructor() {
          </div>
       </section>
    );
-};
+}

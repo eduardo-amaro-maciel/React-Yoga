@@ -39,4 +39,4 @@ export default function Modality() {
          </ul>
       </section>
    );
-};
+}

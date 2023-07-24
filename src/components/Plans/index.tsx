@@ -59,7 +59,7 @@ export default function Plans() {
             </div>
          </header>
          <div className={styles.containerPlanos}>
-            <ul className={styles.listaPlanos} style={{ left: `${positionWidth}px` }} ref={containerSlideRef}>
+            <ul className={styles.listaPlanos} style={{ left: `${positionWidth}px` }}>
                {planos.map(plano =>
                   <Plan plano={plano.nome} preco={plano.preco} key={plano.nome} />
                )}
