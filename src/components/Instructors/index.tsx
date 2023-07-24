@@ -46,7 +46,7 @@ const instrutores = [
 export default function Instructor() {
 
    const [itensAtATime, setItensAtATime] = useState(4);
-   const { slideNext, slidePrev, positionWidth, containerSlideRef, setSlidePosition } = useSlide(itensAtATime);
+   const { slideNext, slidePrev, positionWidth, setSlidePosition } = useSlide(itensAtATime);
    const matchMedium = useMedia('(max-width: 800px)').matches;
    const matchSmall = useMedia('(max-width: 550px)').matches;
    const matchExtraSmall = useMedia('(max-width: 390px)').matches;

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import useMedia from '../../hooks/useMedia';
 import useSlide from '../../hooks/useSlide';
 import styles from './style.module.css';
@@ -26,7 +26,7 @@ const planos = [
 export default function Plans() {
 
    const [itensAtATime, setItensAtATime] = useState(3);
-   const { slideNext, slidePrev, positionWidth, containerSlideRef, setSlidePosition } = useSlide(itensAtATime);
+   const { slideNext, slidePrev, positionWidth, setSlidePosition } = useSlide(itensAtATime);
    const matchMedium = useMedia('(max-width: 800px)').matches;
    const matchSmall = useMedia('(max-width: 550px)').matches;
 
@@ -68,4 +68,4 @@ export default function Plans() {
          <a href='/' className={`btnPreto ${styles.linkComecar}`}>Comece o teste de 7 dias grátis</a>
       </section >
    );
-};
+}
